@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "set DEBUG=app:*&& nodemon index",
     "start": "SET NODE_ENV=production & node index",
+    "test": "mocha --exit",
     "prepare": "husky install"
   },
   "repository": {
@@ -32,7 +33,11 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "proxyquire": "^2.1.3",
+    "sinon": "^15.2.0",
+    "supertest": "^6.3.3"
   }
 }
